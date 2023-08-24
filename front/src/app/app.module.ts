@@ -5,18 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { NavComponent } from './Events/components/nav/nav.component';
 import { ShoppingcartComponent } from './Events/components/shoppingcart/shoppingcart.component';
 import { ViewhomeComponent } from './Events/views/viewhome/viewhome.component';
+import { SliderComponent } from './Events/components/slider/slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent,
     ShoppingcartComponent,
-    ViewhomeComponent
+    ViewhomeComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
