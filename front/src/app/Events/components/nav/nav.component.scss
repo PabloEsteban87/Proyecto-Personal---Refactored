@@ -1,0 +1,32 @@
+.container-nav-2{
+    background-color: #527664;
+    opacity: 0.8;
+    display: none;
+    &--activo{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.menu_ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.menu_ul li{
+    padding: 20px;
+    color: white;
+}
+
+.show-menu{
+  /*   height: 200px; */
+}
+
+.ocultar-menu{
+
+   
+}
+

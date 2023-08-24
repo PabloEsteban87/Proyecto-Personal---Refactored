@@ -1,0 +1,16 @@
+ <div class="container-header">
+    <div class="container-nav-1"><img (click)="showMenu();" class="boton-menu" alt="menu" src= "../../../assets/Boton_menu.png"/></div>
+    <div class="container-logo"><img class="logo" alt="logo" src="../../../assets/logo.png"></div>
+    <div class="container-shopping-cart"><img alt="carrito" src="../../../assets/carrito.png" class="carrito"></div>
+</div>
+
+<div #containernav2 class="container-nav-2" [ngClass]="{'container-nav-2--activo' : active}">
+    <nav class="menu">
+        <ul class="menu_ul">
+            <li>Libros</li>
+            <li>Peliculas</li>
+            <li>Videojuegos</li>
+            <li>Biografia</li>
+        </ul>
+    </nav>
+</div>
