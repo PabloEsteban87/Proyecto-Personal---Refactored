@@ -1,20 +1,17 @@
 .image-slider1{
     border-radius: 35px;
-    width: 100%;
+    width: 95vw;
 }
 
 .image-arrow-left{
-    float: left;
-    position: relative;
-    bottom: 10vh;
-    left: 11px;
+    position: absolute;
+    bottom: 38%;
+    left: 4%;
 }
 
 .image-arrow-right{
-    float: right;
-    position: relative;
-    bottom: 10vh;
-    right: 11px;
-    
+    position: absolute;
+    bottom: 38%;
+    right: 4%;
 }
 

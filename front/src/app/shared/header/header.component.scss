@@ -21,15 +21,17 @@
 
 .container-nav-2{
     background-color: #527664;
-    opacity: 0.8;
     display: none;
-    &--activo{
+    position: absolute;
+   /*  &--activo{
         display: flex;
         justify-content: center;
         text-align: center;
         position: absolute;
         width: 100%;
-    }
+        z-index: 1;
+        animation: menuanimation 1.5s;
+    } */
 }
 
 .menu_ul{
@@ -40,5 +42,57 @@
 .menu_ul li{
     padding: 16px;
     color: white;
+}
+
+.menu_ul:hover li{
+    opacity: .3;
+}
+
+.menu_ul:hover li a{
+    font-size: 1rem;
+}
+
+.menu_ul li:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.menu_ul li:hover a{
+    font-size: 1.3rem;
+}
+
+
+.menu ul li:hover{
+    color: #C48C31;
+}
+
+@keyframes menuanimation{
+    0% { transform: translateY(-50%);}
+    100%{transform: translateY(0%);}
+}
+
+@keyframes menuanimation2{
+    100% {opacity: 1}
+    0%{opacity: 0.1}
+}
+
+.show-menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    animation: menuanimation 1s;
+    filter: blur(0)!important;
+    -webkit-filter: blur(0)!important;
+    background-color:#527664;
+} 
+
+.hide-menu{
+    animation: menuanimation2 1s;
+}
+
+.hideDisplay{
+    display: none;
 }
 
