@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit{
     if(this.active){
      
       this.renderer.addClass(this.menuMovil.nativeElement, "show-menu");
-       this.renderer.addClass(this.bodyElement, "body-blur");
+/*        this.renderer.addClass(this.bodyElement, "body-blur"); */
       this.renderer.removeClass(this.menuMovil.nativeElement, "hide-menu");
       this.renderer.removeClass(this.menuMovil.nativeElement, 'hideDisplay');  
 
@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit{
     
     else{
       this.renderer.removeClass(this.menuMovil.nativeElement, "show-menu");
-       this.renderer.removeClass(this.bodyElement, "body-blur"); 
+/*        this.renderer.removeClass(this.bodyElement, "body-blur");  */
       this.renderer.addClass(this.menuMovil.nativeElement, "hide-menu");
       setTimeout(() => {
         this.renderer.addClass(this.menuMovil.nativeElement, 'hideDisplay');
