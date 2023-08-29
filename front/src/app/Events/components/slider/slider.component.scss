@@ -1,3 +1,4 @@
+@media (max-width: 767px) {
 .image-slider1{
     border-radius: 35px;
     width: 95vw;
@@ -14,4 +15,28 @@
     position: absolute;
     bottom: 38%;
     right: 4%;
+}
+}
+
+@media (min-width: 768px) {
+    .image-slider1{
+        border-radius: 35px;
+        width: 83vw;
+        height: 270px;
+   /*      object-fit:fill; */
+    }
+
+    .image-arrow-left{
+        position: absolute;
+        bottom: 38%;
+        left: 4%;
+    }
+    
+    .image-arrow-right{
+        position: absolute;
+        bottom: 38%;
+        right: 4%;
+    }
+
+
 }
