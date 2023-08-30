@@ -131,17 +131,24 @@
 .menu_ul li  {
    padding: 10px;
    list-style-type: none;
-   background-color: #527664;
-   margin-right: 10px;
+/*    background-color: #527664; */
+   margin-right: 3%;
    margin-bottom: 10px;
-   width: 150px;
+   width: 28%;
    text-align: center;
-   color: white;
-   font-size: 25px;
+   color: black;
+   font-size: 2.5vw;
+}
+
+.menu_ul li:hover  {
+    font-size: 2.9vw;
+    color: #527664;
+    cursor: pointer;
 }
 
 .menu_ul{
-    display: flex;  
+    display: flex; 
+    justify-content: center; 
     padding-left: 0px;
 
 }

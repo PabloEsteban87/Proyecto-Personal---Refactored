@@ -1,5 +1,6 @@
 *{
     margin: 0 auto;
+  
 }
 
 @media (max-width: 767px) {
@@ -29,8 +30,11 @@ body{
     background-repeat: no-repeat;
 /*     height: 100vh; */
     background-color: antiquewhite;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
 }
 }
 
