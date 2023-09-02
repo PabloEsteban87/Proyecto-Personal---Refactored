@@ -1,17 +1,4 @@
 @media (max-width: 767px) {
-.container-title{
-    display: flex;
-    justify-content: center;
-    width: 95%;
-    border-radius: 35px;
-    background-color: #527664;
-    padding: 5px;
-}
-
-.image-title2{ 
-    display: none;
-
-}
 
 .container-slider{
     width: 95%;
@@ -125,28 +112,8 @@
  /*    border-image: url(../../../../assets/marco.png) 30 / 15px / 0px round; */
 }
 
-
-
-.container-title{
-    display: flex;
-    justify-content: center;
-    width: 95%;
-/*     border-radius: 35px;
-    background-color: #527664; */
-    padding: 5px;
-}
-
-.image-title{ 
-    display: none;
-}
-
-.image-title2{ 
-    width: 50vw;
-
-}
-
 .container-slider{
-    width: 56%;
+    width: 75%;
     border-radius: 35px;
     padding: 5px;
     display: flex;
@@ -188,7 +155,7 @@
 
 .container-paragraph p{
    /*  color: white; */
-   color: black;
+   color: #195210;
     font-size: 1.3vw;
     padding: 29px;
     text-align: center;

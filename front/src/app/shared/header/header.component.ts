@@ -9,7 +9,7 @@ import { Component, ElementRef, OnInit, Renderer2, ViewChild} from '@angular/cor
 export class HeaderComponent implements OnInit{
 
   public active : boolean = true;
-  @ViewChild('containernav2') menuMovil!: ElementRef;
+  @ViewChild('containernav2mobile') menuMovil!: ElementRef;
 
   bodyElement! : any; 
 
