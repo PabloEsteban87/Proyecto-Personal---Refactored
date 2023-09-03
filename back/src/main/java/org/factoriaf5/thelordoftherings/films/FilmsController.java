@@ -1,4 +1,4 @@
-package org.factoriaf5.thelordoftherings.books;
+package org.factoriaf5.thelordoftherings.films;
 
 import java.util.List;
 
@@ -15,46 +15,44 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-
-
 @RestController
-@RequestMapping("/books")
-public class BooksController {
+@RequestMapping("/films")
+public class FilmsController {
     
-    private BooksService service;
+     private FilmsService service;
 
     @Autowired
-    public BooksController(BooksService service) {
+    public FilmsController(FilmsService service) {
         this.service = service;
     }
 
     @PostMapping
-    public ResponseEntity<Books> create(@RequestBody Books books) {
-        Books serviceSaved = service.create(books);
+    public ResponseEntity<Films> create(@RequestBody Films films) {
+        Films serviceSaved = service.create(films);
         return ResponseEntity.status(HttpStatus.OK).body(serviceSaved);
     }
 
     @GetMapping(path = { "/{id}" })
-    public ResponseEntity<Books> findOne(@PathVariable("id") Long id) {
-        Books findbyid = service.findById(id);
+    public ResponseEntity<Films> findOne(@PathVariable("id") Long id) {
+        Films findbyid = service.findById(id);
         return ResponseEntity.status(HttpStatus.OK).body(findbyid);
     }
 
     @PutMapping(path = { "/{id}" })
-    public ResponseEntity<Books> update(@PathVariable("id") Long id, @RequestBody Books newBooks) {
-        Books serviceupdated = service.update(id, newBooks);
+    public ResponseEntity<Films> update(@PathVariable("id") Long id, @RequestBody Films newFilms) {
+        Films serviceupdated = service.update(id, newFilms);
         return ResponseEntity.status(HttpStatus.OK).body(serviceupdated);
     }
 
     @DeleteMapping(path = { "/{id}" })
-    public ResponseEntity<Books> delete(@PathVariable("id") Long id, @RequestBody Books books1) {
-        Books serviceDeleted = service.delete(id, books1);
+    public ResponseEntity<Films> delete(@PathVariable("id") Long id, @RequestBody Films films1) {
+        Films serviceDeleted = service.delete(id, films1);
         return ResponseEntity.status(HttpStatus.OK).body(serviceDeleted);
     }
 
     @GetMapping
-    public ResponseEntity<List<Books>> findAll() {
-        List<Books> serviceGetAll = service.getAll();
+    public ResponseEntity<List<Films>> findAll() {
+        List<Films> serviceGetAll = service.getAll();
         return ResponseEntity.status(HttpStatus.OK).body(serviceGetAll);
     }
 }
