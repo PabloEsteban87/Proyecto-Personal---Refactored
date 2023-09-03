@@ -8,6 +8,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ShoppingcartComponent } from './Events/components/shoppingcart/shoppingcart.component';
 import { ViewhomeComponent } from './Events/views/viewhome/viewhome.component';
 import { SliderComponent } from './Events/components/slider/slider.component';
+import { ViewbooksComponent } from './Events/views/viewbooks/viewbooks.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { SliderComponent } from './Events/components/slider/slider.component';
     FooterComponent,
     ShoppingcartComponent,
     ViewhomeComponent,
-    SliderComponent
+    SliderComponent,
+    ViewbooksComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
