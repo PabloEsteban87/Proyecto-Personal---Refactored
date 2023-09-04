@@ -37,6 +37,7 @@ public class SecurityConfiguration {
                                 .authorizeHttpRequests(auth -> auth
                                                 .requestMatchers(HttpMethod.PUT).permitAll()
                                                 .requestMatchers(HttpMethod.POST).permitAll()
+                                                .requestMatchers(HttpMethod.GET).permitAll()
                                                 .requestMatchers("/books/**").permitAll()
                                                 .requestMatchers("/games/**").permitAll()
                                                 .requestMatchers("/user/**").permitAll()

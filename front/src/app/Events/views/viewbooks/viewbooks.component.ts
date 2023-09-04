@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { BooksService } from '../../services/books.service';
+/* import { BooksService } from '../../services/books.service'; */
 
 @Component({
   selector: 'app-viewbooks',
   templateUrl: './viewbooks.component.html',
   styleUrls: ['./viewbooks.component.scss'],
 })
-export class ViewbooksComponent implements OnInit{
-  allBooks: any[] = [];
+export class ViewbooksComponent{
+/*   allBooks: any[] = [];
 
  
 
@@ -21,5 +21,5 @@ export class ViewbooksComponent implements OnInit{
     this.booksService.getBooks().subscribe((books: any[]) => {
       this.allBooks = books;
     });
-  } 
+  }  */
 }

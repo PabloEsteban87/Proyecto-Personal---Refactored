@@ -10,6 +10,7 @@ import { ViewhomeComponent } from './Events/views/viewhome/viewhome.component';
 import { SliderComponent } from './Events/components/slider/slider.component';
 import { ViewbooksComponent } from './Events/views/viewbooks/viewbooks.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BlockComponent } from './Events/components/block/block.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     ShoppingcartComponent,
     ViewhomeComponent,
     SliderComponent,
-    ViewbooksComponent
+    ViewbooksComponent,
+    BlockComponent
   ],
   imports: [
     BrowserModule,
