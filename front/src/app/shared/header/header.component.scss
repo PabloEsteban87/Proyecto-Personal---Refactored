@@ -69,7 +69,7 @@
     }
 
     .menu_ul:hover li a {
-        font-size: 1rem;
+        color:gray;
     }
 
     .menu_ul li:hover {
@@ -181,8 +181,7 @@
     }
 
     .menu_ul li:hover {
-        font-size: 2.3vw;
-        color: #527664;
+        color: gray;
         cursor: pointer;
     }
 
