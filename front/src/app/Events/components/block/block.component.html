@@ -1,6 +1,7 @@
-<div *ngFor="let book of allBooks" class="container-block">
-<img src="" class="image-block"  alt ="portada libro"></div>
-
+<div class="container-block">
+<div *ngFor="let book of allBooks.slice(0, 3)" class="book">
+<img [src]='url + book.image' class="image-block"  alt ="portada libro"></div>
+</div>
 
 
 
