@@ -1,7 +1,21 @@
-<div class="container-block">
-<div *ngFor="let book of allBooks.slice(0, 3)" class="book">
-<img [src]='url + book.image' class="image-block"  alt ="portada libro"></div>
+<!-- <div class="container-block"> -->
+<div class="block">
+    <div *ngFor="let book of allBooks.slice(0, 3)" class="book-front">
+        <div class="front">
+            <img [src]='url + book.image' class="image-block" alt="portada libro">
+            <div *ngFor="let book of allBooks.slice(0, 3)" class="book-back">
+                <p>{{book.title}}</p>
+                <p>{{book.publicationevent}}</p>
+                <p>{{book.description}}</p>
+            </div>
+        </div>
+      
+        <!--         <div class="back"> -->
+    </div>
 </div>
+
+<!--     </div>
+</div> -->
 
 
 

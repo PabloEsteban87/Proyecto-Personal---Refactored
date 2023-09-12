@@ -1,5 +1,5 @@
 @media (max-width: 767px) {
-    .container-block {
+    .front {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 35px;
@@ -9,6 +9,38 @@
         width: 250px;
         border-radius: 20px;
         box-shadow: 1px 0px 5px 10px rgba(82, 118, 100, 1);
+    }
+
+    .back {
+        display: none;
+    }
+
+    .image-block:hover {
+        -webkit-animation: 3s rotate linear infinite;
+        animation: 3s rotate linear infinite;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes rotate {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(360deg);
+        }
     }
 }
 
@@ -27,17 +59,84 @@
 }  */
 
 @media (min-width: 768px) {
-    .container-block {
+
+    .block {
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 50px;
         width: 82%;
+       
+       
     }
 
+    .image-block{
+        transition: all 0.5s ease;
+        transform: perspective(600px);
+        transform-origin: 100% 50%;
+        transform-style: preserve-3d;
+    }
+    
+    .image-block:hover{
+        transform: perspective(600px) rotateY(-180deg) translateX(100%);
+  
+       
+        }
+
+        .front .book-back{
+             /* backface-visibility: hidden;  */
+            width: 100%;
+            height: 100%;
+           
+       /*       display: block;  */
+
+        }
+
+        .book-back{
+           /*  transform: rotateY(180deg); */
+            background-color: darkgreen;
+            color: white;
+             /*  display: none;  */
+          /*  position: absolute; */ 
+          
+
+        }
+        
     .image-block {
         width: 100%;
         border-radius: 20px;
         box-shadow: 1px 0px 5px 10px rgba(82, 118, 100, 1);
     }
+
+
+
+
+
+    /* -webkit-animation: 3s rotate linear infinite;
+        animation: 3s rotate linear infinite;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%; */
+
+
+
+    /*   @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes rotate {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    } */
+
 }
