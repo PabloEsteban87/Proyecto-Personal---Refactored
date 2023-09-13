@@ -26,7 +26,17 @@ public class Books {
     @Column(name = "image")
     private String image;
 
+    @Column(name = "category")
+    private String category;
     
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
     public Long getId() {
         return id;
     }
