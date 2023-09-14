@@ -1,5 +1,5 @@
 <div class="block">
-    <div #hoverName (mouseleave)="onMouseOut(hoverName, back, front)" (mouseenter)="onMouseEnter(hoverName, back, front)" *ngFor="let book of allBooks.slice(0, 3)"
+    <div #hoverName (mouseleave)="onMouseOut(hoverName, back, front)" (mouseenter)="onMouseEnter(hoverName, back, front)" *ngFor="let book of allBooks"
         class="book-front">
         <div #front class="front">
             <img [src]='url + book.image' class="image-block" alt="portada libro">
