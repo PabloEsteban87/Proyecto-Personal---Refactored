@@ -1,29 +1,29 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
-import { BooksService } from '../../services/books.service';
+import { Component , OnInit, Renderer2} from '@angular/core';
+import { FilmsService } from '../../services/films/films.service';
 
 @Component({
-  selector: 'app-block',
-  templateUrl: './block.component.html',
-  styleUrls: ['./block.component.scss'],
+  selector: 'app-block-films',
+  templateUrl: './block-films.component.html',
+  styleUrls: ['./block-films.component.scss']
 })
-export class BlockComponent implements OnInit {
-  allBooks: any[] = [];
+export class BlockFilmsComponent implements OnInit{
+  allFilms: any[] = [];
   url: string | undefined;
 
 
   constructor(
-    private booksService: BooksService,
+    private FilmsService: FilmsService,
     private renderer: Renderer2
   ) {}
 
   ngOnInit(): void {
-    this.loadAllBooks();
+    this.loadAllFilms();
     this.loadpath();
   }
 
-  loadAllBooks() {
-    this.booksService.getBooks().subscribe((books: any[]) => {
-      this.allBooks = books;
+  loadAllFilms() {
+    this.FilmsService.getFilms().subscribe((films: any[]) => {
+      this.allFilms = films;
     });
   }
 
@@ -43,6 +43,4 @@ export class BlockComponent implements OnInit {
     'perspective(600px) rotateY(0deg) translateX(0%)';
   back.style.display = 'block';
   }
-
-
 }

@@ -10,7 +10,9 @@ import { ViewhomeComponent } from './Events/views/viewhome/viewhome.component';
 import { SliderComponent } from './Events/components/slider/slider.component';
 import { ViewbooksComponent } from './Events/views/viewbooks/viewbooks.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BlockComponent } from './Events/components/block/block.component';
+import { BlockComponent } from './Events/components/block-books/block.component';
+import { ViewfilmsComponent } from './Events/views/viewfilms/viewfilms.component';
+import { BlockFilmsComponent } from './Events/components/block-films/block-films.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { BlockComponent } from './Events/components/block/block.component';
     ViewhomeComponent,
     SliderComponent,
     ViewbooksComponent,
-    BlockComponent
+    BlockComponent,
+    ViewfilmsComponent,
+    BlockFilmsComponent
   ],
   imports: [
     BrowserModule,

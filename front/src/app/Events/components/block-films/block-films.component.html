@@ -1,0 +1,14 @@
+<div class="block">
+    <div #hoverName (mouseleave)="onMouseOut(hoverName, back, front)" (mouseenter)="onMouseEnter(hoverName, back, front)" *ngFor="let films of allFilms.slice(0, 3)"
+        class="films-front">
+        <div #front class="front">
+            <img [src]='url + films.image' class="image-block" alt="portada libro">
+
+        </div>
+        <div #back class="back">
+            <p class="title">{{films.title}}</p>
+            <p class="publication">{{films.publicationevent  | date: 'dd-MM-yyyy'}}</p>
+            <p class="description">{{films.description}}</p>
+        </div>
+    </div>
+</div>

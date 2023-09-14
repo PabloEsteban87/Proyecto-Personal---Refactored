@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-/* import { BooksService } from '../../services/books.service'; */
+import { BooksService } from '../../services/books.service'; 
 
 @Component({
   selector: 'app-viewbooks',
@@ -7,19 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./viewbooks.component.scss'],
 })
 export class ViewbooksComponent{
-/*   allBooks: any[] = [];
+   allBooks: any[] = [];
+   books: any;
 
- 
-
-  constructor(private booksService: BooksService) {}
+   constructor(
+    private booksService: BooksService,
+  ) {}
 
    ngOnInit(): void {
-    this.loadAllBooks();
+/*   this.allBooksSave(this.books); */
+  this.loadAllBooks();
+  }
+
+  allBooksSave(books: any){
+    this.allBooks.push(books);
+    console.log(this.allBooks);
   }
 
   loadAllBooks() {
     this.booksService.getBooks().subscribe((books: any[]) => {
       this.allBooks = books;
     });
-  }  */
-}
+  }
+
+  }  
+
