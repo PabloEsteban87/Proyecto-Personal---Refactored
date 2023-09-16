@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BlockComponent } from './Events/components/block-books/block.component';
 import { ViewfilmsComponent } from './Events/views/viewfilms/viewfilms.component';
 import { BlockFilmsComponent } from './Events/components/block-films/block-films.component';
+import { BlockGamesComponent } from './Events/components/block-games/block-games.component';
+import { ViewgamesComponent } from './Events/views/viewgames/viewgames.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { BlockFilmsComponent } from './Events/components/block-films/block-films
     ViewbooksComponent,
     BlockComponent,
     ViewfilmsComponent,
-    BlockFilmsComponent
+    BlockFilmsComponent,
+    BlockGamesComponent,
+    ViewgamesComponent
   ],
   imports: [
     BrowserModule,
