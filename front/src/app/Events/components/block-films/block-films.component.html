@@ -1,5 +1,5 @@
 <div class="block">
-    <div #hoverName (mouseleave)="onMouseOut(hoverName, back, front)" (mouseenter)="onMouseEnter(hoverName, back, front)" *ngFor="let films of allFilms.slice(0, 3)"
+    <div #hoverName (mouseleave)="onMouseOut(hoverName, back, front)" (mouseenter)="onMouseEnter(hoverName, back, front)" *ngFor="let films of allFilms"
         class="films-front">
         <div #front class="front">
             <img [src]='url + films.image' class="image-block" alt="portada libro">

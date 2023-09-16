@@ -28,7 +28,7 @@ export class BlockFilmsComponent implements OnInit{
   }
 
   loadpath() {
-    this.url = '../../../../assets/libros/';
+    this.url = '../../../../assets/peliculas/';
   }
 
   onMouseEnter(hoverName: HTMLElement, back: HTMLElement, front: HTMLElement) {
