@@ -20,9 +20,17 @@ public class Films {
     @Column(name = "publicationevent")
     private Date publicationevent;
     
-    @Column(name = "description", columnDefinition="TEXT")
-    private String description;
+    @Column(name = "video")
+    private String video;
     
+    public String getVideo() {
+        return video;
+    }
+
+    public void setVideo(String video) {
+        this.video = video;
+    }
+
     @Column(name = "image")
     private String image;
 
@@ -49,14 +57,6 @@ public class Films {
 
     public void setPublicationevent(Date publicationevent) {
         this.publicationevent = publicationevent;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public String getImage() {

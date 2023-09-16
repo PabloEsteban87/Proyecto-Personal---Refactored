@@ -29,7 +29,7 @@ public class FilmsService {
         Films currentFilm = repository.findById(id).orElseThrow();
         currentFilm.setTitle(newFilms.getTitle());
         currentFilm.setPublicationevent(newFilms.getPublicationevent());
-        currentFilm.setDescription(newFilms.getDescription());
+        currentFilm.setVideo(newFilms.getVideo());
         currentFilm.setImage(newFilms.getImage());
         return repository.save(currentFilm);
     }

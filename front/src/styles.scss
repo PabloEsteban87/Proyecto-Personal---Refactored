@@ -1,6 +1,5 @@
 *{
     margin: 0 auto;
-  
 }
 
 @media (max-width: 767px) {
@@ -11,8 +10,9 @@
 
      }
      
-
-
+     .video_background{
+        display: none;
+        }
 }
 
 
@@ -21,18 +21,28 @@
 
 @media (min-width: 768px) {
 body{
-    background-image: url(./assets/fondo.jpg);
+/*     background-image: url(./assets/fondo.jpg);
     background-size:cover;
-    background-repeat: no-repeat;
-     height: 100vh; 
+    background-repeat: no-repeat;  */
+     /* height: 100vh;  */
     font-family:Arial, Helvetica, sans-serif;
+    z-index: 1;
+/*     background: linear-gradient(180deg, rgba(250,235,215,1) 29%, rgba(87,149,118,1) 81%); */
 }
+
+.video_background{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1000;
+    overflow: hidden;
+    }
 
  .fondo{
     
-    background-repeat: no-repeat;
+   /*  background-repeat: no-repeat; */
 /*    height: 100vh; */
-    background-color: antiquewhite;
+    background: linear-gradient(184deg, rgba(250,235,215,1) 31%, rgba(87,149,118,1) 100%);
     margin-left: 130px;
     margin-right: 130px;
     margin-top: 30px;
