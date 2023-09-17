@@ -19,7 +19,19 @@ public class Films {
     
     @Column(name = "publicationevent")
     private Date publicationevent;
+
+    @Column(name = "description", columnDefinition="TEXT")
+    private String description;
+
     
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     @Column(name = "video")
     private String video;
     

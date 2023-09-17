@@ -3,7 +3,9 @@ package org.factoriaf5.thelordoftherings.videogame;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class VideogameService {
     
      VideogameRepository repository;
