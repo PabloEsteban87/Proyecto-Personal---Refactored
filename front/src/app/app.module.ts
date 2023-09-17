@@ -15,6 +15,7 @@ import { ViewfilmsComponent } from './Events/views/viewfilms/viewfilms.component
 import { BlockFilmsComponent } from './Events/components/block-films/block-films.component';
 import { BlockGamesComponent } from './Events/components/block-games/block-games.component';
 import { ViewgamesComponent } from './Events/views/viewgames/viewgames.component';
+import { ViewbiographyComponent } from './Events/views/viewbiography/viewbiography.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ViewgamesComponent } from './Events/views/viewgames/viewgames.component
     ViewfilmsComponent,
     BlockFilmsComponent,
     BlockGamesComponent,
-    ViewgamesComponent
+    ViewgamesComponent,
+    ViewbiographyComponent
   ],
   imports: [
     BrowserModule,
