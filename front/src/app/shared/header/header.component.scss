@@ -1,4 +1,9 @@
 @media (max-width: 767px) {
+    .container-logo{
+        margin-top: 13px;
+    }
+    
+    
     .container-header-mobile-2 {
         display: flex;
         justify-content: space-between;
@@ -134,6 +139,10 @@
 }
 
 @media (min-width: 768px) {
+    .container-logo{
+        margin-top: 13px;
+    }
+    
     .container-header {
         display: flex;
         flex-direction: column;
@@ -190,7 +199,7 @@
         font-size: 2.1vw;
     }
 
-    .menu_ul li:hover {
+    .menu_ul li a:hover {
         color: gray;
         cursor: pointer;
     }
