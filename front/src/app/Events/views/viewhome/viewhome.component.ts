@@ -22,6 +22,10 @@ export class ViewhomeComponent {
   }
   
 
+  openMap( openmap: HTMLElement, imageopenmap: HTMLElement){
+
+  }
+
 
 
 /*   openMenu(){

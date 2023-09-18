@@ -91,6 +91,15 @@
     width: 100%; 
     height: 30px;   
 }
+
+.lens{
+ display: none;
+}
+
+.open-map{
+    display: none;
+}
+
 }
 
 @media (min-width: 768px) {
@@ -110,6 +119,11 @@
     border-radius: 20px; */
     
  /*    border-image: url(../../../../assets/marco.png) 30 / 15px / 0px round; */
+}
+
+.open-map{
+    display: none;
+    width: 50%;
 }
 
 .container-slider{
@@ -168,14 +182,23 @@
 /*     box-shadow: 0px 1px 25px 5px rgba(66,166,144,1); */
     width: 80%;
     padding: 20px;
+    position:relative;
 /*     height: 400px; */
 }
 
-.container-image2 img{
+
+
+.map{
     max-width: 29vw;
     border-radius: 10px;
-/*     width: 450px;
-    height: 450px; */
+}
+
+.lens{
+   position: absolute;
+   width: 42px;
+   left: 3vw;
+   bottom: 19vh;
+   cursor: pointer;
 }
 
 .container-image3{
