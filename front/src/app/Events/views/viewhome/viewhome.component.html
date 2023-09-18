@@ -1,20 +1,41 @@
-<div class="container-view-home">
-<app-header></app-header>
-<div class="container-slider"><app-slider></app-slider></div>
-<div class="container-view-home-2">
-<div class="container-image1"><img alt="imagen anillo" src="../../../../assets/anillo.png"/>
-<div class="container-paragraph"><p>El anillo fue forjado en el monte del destino. Su inscripción dice: Un anillo para gobernarlos a todos. Un anillo para encontrarlos,
-    un anillo para atraerlos a todos y atarlos en las tinieblas.</p></div></div>
-<div class="container-image2"><img (click)="openMap(openmap, imageopenmap)" class="lens" alt="lupa" src="../../../../assets/lupa.png"><img class="map" alt="imagen mapa" src="../../../../assets/map.jpg"/>
-<div class="container-paragraph"><p>Este es el mapa de la tierra media. El señor de los anillos y el hobbit, sus libros más conocidos se emplazarian en la tercera edad. El mapa está muy detallado. Lo dibujó el propio Tolkien.</p></div></div>
+<div #containerglobal class="container-view-home">
+    <app-header></app-header>
+    <div class="container-slider"><app-slider></app-slider></div>
+    <div class="container-view-home-2">
+        <div class="container-image1"><img alt="imagen anillo" src="../../../../assets/anillo.png" />
+            <div class="container-paragraph">
+                <p>El anillo fue forjado en el monte del destino. Su inscripción dice: Un anillo para gobernarlos a
+                    todos. Un anillo para encontrarlos,
+                    un anillo para atraerlos a todos y atarlos en las tinieblas.</p>
+            </div>
+        </div>
+        <div class="container-image2"><img (click)="openMap(openmap, containerglobal)" class="lens" alt="lupa"
+                src="../../../../assets/lupa.png"><img class="map" alt="imagen mapa" src="../../../../assets/map.jpg" />
+            <div class="container-paragraph">
+                <p>Este es el mapa de la tierra media. El señor de los anillos y el hobbit, sus libros más conocidos se
+                    emplazarian en la tercera edad. El mapa está muy detallado. Lo dibujó el propio Tolkien.</p>
+            </div>
+        </div>
 
-<div class="container-image3"><img alt="imagen portada libro hobbit" src="../../../../assets/portada-hobbit.jpeg"/>
-<div class="container-paragraph"><p>En la imagen superior está la portada del libro del hobbit. Este libro es anterior al señor de los anillos y es el primero en explorar el universo mitológico.  </p></div></div>
-<div class="container-image4"><img alt="imagen Rivendel" src="../../../../assets/Rivendel.png"/>
-<div class="container-paragraph container-paragraph-down"><p>Esto es Rivendel tal como se ve en la pelicula dirigida por Peter Jackson. Aparece en el hobbit y el señor de los anillos. Y es donde habita Elrond, un medio elfo.  </p></div></div>
+        <div class="container-image3"><img alt="imagen portada libro hobbit"
+                src="../../../../assets/portada-hobbit.jpeg" />
+            <div class="container-paragraph">
+                <p>En la imagen superior está la portada del libro del hobbit. Este libro es anterior al señor de los
+                    anillos y es el primero en explorar el universo mitológico. </p>
+            </div>
+        </div>
+        <div class="container-image4"><img alt="imagen Rivendel" src="../../../../assets/Rivendel.png" />
+            <div class="container-paragraph container-paragraph-down">
+                <p>Esto es Rivendel tal como se ve en la pelicula dirigida por Peter Jackson. Aparece en el hobbit y el
+                    señor de los anillos. Y es donde habita Elrond, un medio elfo. </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-footer"><app-footer></app-footer></div>
 </div>
-<div class="container-footer"><app-footer></app-footer></div></div>
 
 <div #openmap class="open-map">
-<img #imageopenmap class="image-open-map" src="../../../../assets/map.jpg">
+    <p (click)="closeopenmap(openmap, containerglobal)" class="close-open-map">X</p>
+    <img #imageopenmap class="image-open-map" src="../../../../assets/map.jpg">
+    <p class="openmap-paragraph">Mapa de la tierra media ampliado</p>
 </div>

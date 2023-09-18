@@ -122,8 +122,38 @@
 }
 
 .open-map{
-    display: none;
-    width: 50%;
+     display: none; 
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.image-open-map{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.openmap-paragraph{
+    background-color: #C48C31;
+    color:white;
+    width: 67%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.close-open-map{
+    background-color: #C48C31;
+    font-size: 17px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .container-slider{

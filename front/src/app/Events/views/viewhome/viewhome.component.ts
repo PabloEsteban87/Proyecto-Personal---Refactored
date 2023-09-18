@@ -22,8 +22,14 @@ export class ViewhomeComponent {
   }
   
 
-  openMap( openmap: HTMLElement, imageopenmap: HTMLElement){
+  openMap( openmap: HTMLElement, containerglobal: HTMLElement){
+    openmap.style.display = 'flex';
+    containerglobal .style.filter = 'blur(50px)';
+  }
 
+  closeopenmap( openmap: HTMLElement, containerglobal: HTMLElement){
+    openmap.style.display = 'none';
+    containerglobal .style.filter = 'blur(0px)';
   }
 
 
