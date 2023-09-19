@@ -19,7 +19,9 @@
         color: white;
     }
 
-
+    .recommended-books{
+        color:#527664; 
+    }
 
     .container-title {
         display: flex;
@@ -44,10 +46,49 @@
         height: 99px;
     }
 
-    .carrito {
-        width: 24px;
-        height: 34px;
+    .container-recommendedbooks{
+        position: relative;
+       
     }
+
+    .text-book{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        transition: 1.5s ease;
+        /* background-color: #c3ac76; */
+        display: none;
+    }
+
+    .text-book-1{
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: #527664;
+    }
+
+    .book {
+        width: 30px;
+        height: 30px;
+       
+    }
+
+    .container-recommendedbooks:hover .text-book{
+       
+        display: block;
+    }
+
+
 
     .container-nav-2-mobile {
         background-color: #527664;

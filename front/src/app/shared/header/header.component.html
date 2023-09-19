@@ -13,21 +13,21 @@
             </ul>
         </nav>
     </div>
-    <div class="container-shopping-cart"><img alt="carrito" src="../../../assets/carrito.png" class="carrito"></div>
+  <!--   <div class="container-shopping-cart"><img alt="carrito" src="../../../assets/carrito.png" class="carrito"></div> -->
  </div> 
 
 <div class="container-header-mobile">
     <div class="container-header-mobile-2">
     <div class="container-nav-1"><img (click)="showMenu();" class="boton-menu" alt="menu" src= "../../../assets/Boton_menu.png"/></div>
     <div class="container-logo"><img class="logo" alt="logo" src="../../../assets/logo.png"></div>
-    <div class="container-shopping-cart"><img alt="carrito" src="../../../assets/carrito.png" class="carrito"></div>
+    <div class="container-recommendedbooks"><img alt="libro" src="../../../assets/book.png" class="book"><div class="text-book"><a routerLink="/viewform"><div class="text-book-1">Libros recomendados</div></a></div></div>
     <div #containernav2mobile class="container-nav-2-mobile">
         <nav class="menu">
             <ul class="menu_ul">
-                <li><a>Libros</a></li>
-                <li><a>Peliculas</a></li>
-                <li><a>Videojuegos</a></li>
-                <li><a>Biografia</a></li>
+                <li><a routerLink="/viewbooks">Libros</a></li>
+                <li><a routerLink="/viewfilms">Peliculas</a></li>
+                <li><a routerLink="/viewgames">Videojuegos</a></li>
+                <li><a routerLink="/viewbiography">Biografia</a></li>
             </ul>
         </nav>
     </div>

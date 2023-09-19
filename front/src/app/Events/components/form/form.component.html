@@ -1,0 +1,19 @@
+<div class="container-form">
+    <form [formGroup]="FormRecommended" class="formulario" (submit)="onSubmitForm();">
+        <label for="name">Nombre:</label>
+        <input formControlName="name" type="text" placeholder="Escribe tu nombre"><br>
+        <label for="date">Fecha:</label>
+        <input formControlName="date" type="text" placeholder="Escribe la fecha actual"><br>
+        <label for="topic">libro:</label>
+        <input formControlName="book" type="text" placeholder="Escribe el libro"><br><br>
+        <label class="ordenado" for="description">Recomendación:</label><br>
+        <textarea class="ordenado" formControlName="description" rows="50" cols="30">
+        </textarea><br><br>
+<div class="botones">
+            <input class="reset" type="reset" value="reset">
+            <button class="validar" type="submit">Validar</button><br><br>
+            <input (click)="back()" class="atras" type="" value="Atrás">
+        </div>
+</form>
+
+</div>

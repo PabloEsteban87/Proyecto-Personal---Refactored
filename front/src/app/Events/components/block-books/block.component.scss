@@ -1,4 +1,4 @@
-@media (max-width: 425px) {
+@media (max-width: 576px) {
     .block {
         display: grid;
         grid-template-columns: 1fr;
@@ -96,7 +96,7 @@
     }
 }  */
 
-@media (min-width: 426px) and (max-width: 1241px) {
+@media (min-width: 577px) and (max-width: 992px) {
 
     .block {
         display: grid;
@@ -159,7 +159,7 @@
 }
 
 
-@media (min-width: 1242px) {
+@media (min-width: 993px) {
 
     .block {
         display: grid;

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { BlockFilmsComponent } from './Events/components/block-films/block-films
 import { BlockGamesComponent } from './Events/components/block-games/block-games.component';
 import { ViewgamesComponent } from './Events/views/viewgames/viewgames.component';
 import { ViewbiographyComponent } from './Events/views/viewbiography/viewbiography.component';
+import { ViewformComponent } from './Events/views/viewform/viewform.component';
+import { FormComponent } from './Events/components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +34,15 @@ import { ViewbiographyComponent } from './Events/views/viewbiography/viewbiograp
     BlockFilmsComponent,
     BlockGamesComponent,
     ViewgamesComponent,
-    ViewbiographyComponent
+    ViewbiographyComponent,
+    ViewformComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

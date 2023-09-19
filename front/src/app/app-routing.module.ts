@@ -5,6 +5,7 @@ import { ViewbooksComponent } from './Events/views/viewbooks/viewbooks.component
 import { ViewfilmsComponent } from './Events/views/viewfilms/viewfilms.component';
 import { ViewgamesComponent } from './Events/views/viewgames/viewgames.component';
 import { ViewbiographyComponent } from './Events/views/viewbiography/viewbiography.component';
+import { ViewformComponent } from './Events/views/viewform/viewform.component';
 
 const routes: Routes = [
 
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'viewfilms', component: ViewfilmsComponent },
   { path: 'viewgames', component: ViewgamesComponent },
   { path: 'viewbiography', component: ViewbiographyComponent },
+  { path: 'viewform', component: ViewformComponent },
 
 
 
