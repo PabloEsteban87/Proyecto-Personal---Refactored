@@ -23,13 +23,15 @@ export class FormComponent {
   }
 
   back(){
-    this.router.navigate(['']);
+    this.router.navigate(['viewhome']);
   }
 
   
   onSubmitForm(): void {
-    /* this.addSupport(); */
-  }
+     /*  this.booksService.getBooks().subscribe((books: any[]) => {
+        this.allBooks = books;
+      }); */
+  } 
 
 
 }
