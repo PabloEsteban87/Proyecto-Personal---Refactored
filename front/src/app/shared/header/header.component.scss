@@ -101,6 +101,7 @@
     .menu_ul li {
         padding: 16px;
         color: white;
+        font-weight: 600;
     }
 
     .menu_ul:hover li {
@@ -149,13 +150,14 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        width: 100%;
+        width: 95%;
         z-index: 1;
         animation: menuanimation 1s;
-        filter: blur(0) !important;
-        -webkit-filter: blur(0) !important;
         background-color: #527664;
-        margin-top: 300px;
+        margin-top: 452px;
+        margin-left: 2.5%;
+        border-radius: 30px;
+        box-shadow: -1px 10px 11px 4px rgba(107,99,107,1);
     }
 
     .hide-menu {
@@ -218,7 +220,7 @@
     .menu_ul li {
         padding: 10px;
         list-style-type: none;
-        margin-right: 3%;
+        margin-right: 2%;
         margin-bottom: 10px;
         width: 28%;
         text-align: center;
