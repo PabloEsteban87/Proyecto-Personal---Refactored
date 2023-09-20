@@ -4,7 +4,6 @@ import java.sql.Date;
 
 import jakarta.persistence.*;
 
-
 @Entity
 @Table(name = "recommended")
 public class Recommended {
@@ -13,17 +12,17 @@ public class Recommended {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_recommended")
     private Long id;
-    
+
     @Column(name = "name")
     private String name;
-    
+
     @Column(name = "date")
     private Date date;
 
     @Column(name = "book")
     private String book;
 
-    @Column(name = "recommended", columnDefinition="TEXT")
+    @Column(name = "recommended", columnDefinition = "TEXT")
     private String recommended;
 
     public Long getId() {
@@ -65,5 +64,5 @@ public class Recommended {
     public void setRecommended(String recommended) {
         this.recommended = recommended;
     }
-    
+
 }

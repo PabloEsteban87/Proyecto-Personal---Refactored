@@ -4,23 +4,22 @@ import { RecommendedBooksService } from '../../services//Recommended/recommended
 @Component({
   selector: 'app-viewrecommended',
   templateUrl: './viewrecommended.component.html',
-  styleUrls: ['./viewrecommended.component.scss']
+  styleUrls: ['./viewrecommended.component.scss'],
 })
 export class ViewrecommendedComponent implements OnInit {
-
   allRecommendedBooks: any[] = [];
 
-  constructor(private recommendedBooksService: RecommendedBooksService){}
-
+  constructor(private recommendedBooksService: RecommendedBooksService) {}
 
   ngOnInit(): void {
     this.loadAllRecommended();
   }
 
-  loadAllRecommended(){
-    this.recommendedBooksService.getRecommendedBooks().subscribe((recommendedbooks: any[]) => {
-      this.allRecommendedBooks = recommendedbooks;
-    }); 
+  loadAllRecommended() {
+    this.recommendedBooksService
+      .getRecommendedBooks()
+      .subscribe((recommendedbooks: any[]) => {
+        this.allRecommendedBooks = recommendedbooks;
+      });
   }
-
 }

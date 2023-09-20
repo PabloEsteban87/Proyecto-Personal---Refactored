@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2,  Output, EventEmitter  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BooksService } from '../../services/books.service';
 
 @Component({
@@ -10,19 +10,11 @@ export class BlockComponent implements OnInit {
   allBooks: any[] = [];
   url: string | undefined;
 
-  @Output() allbookschild = new EventEmitter<any>();
-
-
-  constructor(
-    private booksService: BooksService,
-    private renderer: Renderer2
-  ) {}
+  constructor(private booksService: BooksService) {}
 
   ngOnInit(): void {
     this.loadAllBooks();
     this.loadpath();
-/*     this.allbookschild.emit(this.allBooks); */
-    
   }
 
   loadAllBooks() {
@@ -42,11 +34,9 @@ export class BlockComponent implements OnInit {
     back.style.position = 'absolute';
   }
 
-  onMouseOut(hoverName: HTMLElement, back: HTMLElement, front: HTMLElement){
+  onMouseOut(hoverName: HTMLElement, back: HTMLElement, front: HTMLElement) {
     hoverName.style.transform =
-    'perspective(600px) rotateY(0deg) translateX(0%)';
-  back.style.display = 'block';
+      'perspective(600px) rotateY(0deg) translateX(0%)';
+    back.style.display = 'block';
   }
-
-
 }

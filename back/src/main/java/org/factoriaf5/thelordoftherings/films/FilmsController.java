@@ -14,12 +14,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
 @RequestMapping("/films")
 public class FilmsController {
-    
-     private FilmsService service;
+
+    private FilmsService service;
 
     @Autowired
     public FilmsController(FilmsService service) {

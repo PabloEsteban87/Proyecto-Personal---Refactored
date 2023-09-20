@@ -1,5 +1,5 @@
 <div class="block">
-    <div #hoverName  (mouseenter)="onMouseEnter(hoverName, back, front)" *ngFor="let games of allGames"
+    <div #hoverName (mouseenter)="onMouseEnter(hoverName, back, front)" *ngFor="let games of allGames"
         class="films-front">
         <div #front class="front">
             <img [src]='url + games.image' class="image-block" alt="portada libro">
@@ -7,7 +7,7 @@
         </div>
         <div #back class="back" (mouseleave)="onMouseOut(hoverName, back, front)">
             <p class="title">{{games.title}}</p>
-            <p class="publication">{{games.publicationevent  | date: 'dd-MM-yyyy'}}</p>
+            <p class="publication">{{games.publicationevent | date: 'dd-MM-yyyy'}}</p>
             <p class="description">{{games.description}}<br></p>
         </div>
     </div>

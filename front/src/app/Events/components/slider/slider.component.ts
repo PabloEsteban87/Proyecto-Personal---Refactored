@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-slider',
@@ -9,8 +9,6 @@ export class SliderComponent implements OnInit {
   array_images: any = Array();
   j: any = 0;
   imagePath!: string;
-
-  constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
     for (let i = 1; i <= 5; i++) {

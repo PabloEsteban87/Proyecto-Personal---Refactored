@@ -1,145 +1,72 @@
-$phone:320px;
-$tablet:768px;
-$desktop:1024px;
-
-
-/* @media (min-width:$phone) and (max-width: $tablet){
-.container-form{
-    display: flex;
-    justify-content: center;
-    background-color: antiquewhite;
-    padding: 10px;
-}
-
-.formulario{
-    text-align: center;
-}
-
-input{
-    margin-bottom: 12%;
-    width: 100%;
-    margin-top: 5%;
-    background-color: #FFEDDC;
-    border-radius: 20px;
-}
-
-textarea{
-    background-color: #FFEDDC;
-}
-
-.reset{
-    margin-right: 55px;
-    padding: 5px;
-    width: 50px;
-}
-
-.validar{
-    padding: 5px;
-    background-color: #FFEDDC;
-}
-
-.atras{
-    width:20%;
-    text-align: center;
-    padding: 5px;
-    background-color: #FFEDDC;
-    cursor: pointer;
-}
-
-}
- */
-
-@media (min-width:290px) and (max-width: 426px){
-    .input-1{
-    width: 80% !important;
-    }
-    input{
-     margin-bottom: 7% !important;
+@media (min-width:290px) and (max-width: 426px) {
+    .input-1 {
+        width: 80% !important;
     }
 
-    form{
-   /*     height: 71vh !important; */
+    input {
+        margin-bottom: 7% !important;
     }
 }
-
 
 @media (max-width: 2560px) {
 
-    .container-form{
-     /*    display: flex; */
-      /*   justify-content: center;
-        background-color: antiquewhite;
-        padding: 10px;
-        height: 71vh; */
-    }
-
-    form{
+    form {
         display: flex;
         flex-direction: column;
 
         justify-content: center;
         background-color: antiquewhite;
         padding: 10px;
-  /*       height: 100vh; */
     }
 
-
-    input{
+    input {
         margin-bottom: 30px;
         width: 350px;
         background-color: rgba(82, 118, 100, 1);
         border-radius: 20px;
         color: white;
-        padding: 10px;  
+        padding: 10px;
     }
 
-    input::placeholder{
-        color:white;
+    input::placeholder {
+        color: white;
         text-align: center;
     }
-
- /*    label{
-        text-align: left;
-        width: 191px;
-        display: inline-block;
-    } */
     
-    .reset{
+    .reset {
         margin-right: 55px;
         padding: 5px;
         text-align: center;
         width: 50px;
     }
-    
-    .validar{
+
+    .validar {
         padding: 5px;
         width: 30%;
     }
-    
-    .atras{
-        width:20%;
+
+    .atras {
+        width: 20%;
         text-align: center;
         padding: 5px;
         cursor: pointer;
     }
 
-    .area1{
+    .area1 {
         text-align: justify;
- /*        width: 81%; */
         background-color: rgba(82, 118, 100, 1);
         border-radius: 20px;
         color: white;
-        padding:20px;
+        padding: 20px;
         height: 20vh;
     }
 
-    .botones{
+    .botones {
         display: block;
         text-align: center;
     }
 
- 
-    .area{
+    .area {
         color: rgba(82, 118, 100, 1);
         font-weight: 700;
         text-align: center;

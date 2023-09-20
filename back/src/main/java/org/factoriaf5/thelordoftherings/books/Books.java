@@ -4,31 +4,30 @@ import java.sql.Date;
 
 import jakarta.persistence.*;
 
-
 @Entity
 @Table(name = "books")
 public class Books {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_book")
     private Long id;
-    
+
     @Column(name = "title")
     private String title;
-    
+
     @Column(name = "publicationevent")
     private Date publicationevent;
-    
-    @Column(name = "description", columnDefinition="TEXT")
+
+    @Column(name = "description", columnDefinition = "TEXT")
     private String description;
-    
+
     @Column(name = "image")
     private String image;
 
     @Column(name = "category")
     private String category;
-    
+
     public String getCategory() {
         return category;
     }

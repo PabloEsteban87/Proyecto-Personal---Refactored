@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class VideogameService {
-    
-     VideogameRepository repository;
+
+    VideogameRepository repository;
 
     @Autowired
     public VideogameService(VideogameRepository repository) {

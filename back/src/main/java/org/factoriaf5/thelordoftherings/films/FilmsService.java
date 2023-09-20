@@ -2,14 +2,13 @@ package org.factoriaf5.thelordoftherings.films;
 
 import java.util.List;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class FilmsService {
-    
-     FilmsRepository repository;
+
+    FilmsRepository repository;
 
     @Autowired
     public FilmsService(FilmsRepository repository) {

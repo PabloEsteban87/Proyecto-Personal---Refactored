@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/videogame")
 public class VideogameController {
-    
-      private VideogameService service;
+
+    private VideogameService service;
 
     @Autowired
     public VideogameController(VideogameService service) {

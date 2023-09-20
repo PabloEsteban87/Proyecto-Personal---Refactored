@@ -1,10 +1,8 @@
 package org.factoriaf5.thelordoftherings.recommended;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,10 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-
 @RestController
 @RequestMapping("/recommended")
-/* @CrossOrigin(enabled = false) */
 public class RecommendedController {
     private RecommendedService service;
 
@@ -25,7 +21,6 @@ public class RecommendedController {
         this.service = service;
     }
 
-   
     @PostMapping
     public ResponseEntity<Recommended> create(@RequestBody Recommended recommended) {
         Recommended serviceSaved = service.create(recommended);

@@ -4,26 +4,24 @@ import java.sql.Date;
 
 import jakarta.persistence.*;
 
-
 @Entity
 @Table(name = "films")
 public class Films {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_film")
     private Long id;
-    
+
     @Column(name = "title")
     private String title;
-    
+
     @Column(name = "publicationevent")
     private Date publicationevent;
 
-    @Column(name = "description", columnDefinition="TEXT")
+    @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
-    
     public String getDescription() {
         return description;
     }
@@ -34,7 +32,7 @@ public class Films {
 
     @Column(name = "video")
     private String video;
-    
+
     public String getVideo() {
         return video;
     }
@@ -46,7 +44,6 @@ public class Films {
     @Column(name = "image")
     private String image;
 
-    
     public Long getId() {
         return id;
     }

@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, Output, Renderer2, ViewChild, ViewChildren } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-viewhome',
@@ -9,17 +9,13 @@ export class ViewhomeComponent {
 
 
 
-  isFront: boolean;
+/*   isFront: boolean;
 
   constructor(private renderer: Renderer2){
     this.isFront = true;
-  }
+  } */
 
-/*   @Input() containernav2!: HTMLElement; */
 
-  ngOnInit() {
-    
-  }
   
 
   openMap( openmap: HTMLElement, containerglobal: HTMLElement){

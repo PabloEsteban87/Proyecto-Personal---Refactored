@@ -1,9 +1,9 @@
 @media (max-width: 767px) {
-    .container-logo{
+    .container-logo {
         margin-top: 13px;
     }
-    
-    
+
+
     .container-header-mobile-2 {
         display: flex;
         justify-content: space-between;
@@ -14,13 +14,13 @@
         display: none;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: white;
     }
 
-    .recommended-books{
-        color:#527664; 
+    .recommended-books {
+        color: #527664;
     }
 
     .container-title {
@@ -46,12 +46,12 @@
         height: 99px;
     }
 
-    .container-recommendedbooks{
+    .container-recommendedbooks {
         position: relative;
-       
+
     }
 
-    .text-book{
+    .text-book {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -60,11 +60,10 @@
         height: 100%;
         width: 100%;
         transition: 1.5s ease;
-        /* background-color: #c3ac76; */
         display: none;
     }
 
-    .text-book-1{
+    .text-book-1 {
         color: white;
         font-size: 20px;
         position: absolute;
@@ -80,29 +79,18 @@
     .book {
         width: 30px;
         height: 30px;
-       
+
     }
 
-    .container-recommendedbooks:hover .text-book{
-       
+    .container-recommendedbooks:hover .text-book {
+
         display: block;
     }
-
-
 
     .container-nav-2-mobile {
         background-color: #527664;
         display: none;
         position: absolute;
-        /*  &--activo{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        position: absolute;
-        width: 100%;
-        z-index: 1;
-        animation: menuanimation 1.5s;
-    } */
     }
 
     .menu_ul {
@@ -120,7 +108,7 @@
     }
 
     .menu_ul:hover li a {
-        color:gray;
+        color: gray;
     }
 
     .menu_ul li:hover {
@@ -180,10 +168,10 @@
 }
 
 @media (min-width: 768px) {
-    .container-logo{
+    .container-logo {
         margin-top: 13px;
     }
-    
+
     .container-header {
         display: flex;
         flex-direction: column;
@@ -193,7 +181,7 @@
         display: none;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: #527664;
     }
@@ -202,8 +190,6 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        /*     border-radius: 35px;
-    background-color: #527664; */
         padding: 5px;
     }
 

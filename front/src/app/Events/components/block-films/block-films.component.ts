@@ -1,19 +1,19 @@
-import { Component , OnInit, Renderer2} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FilmsService } from '../../services/films/films.service';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-block-films',
   templateUrl: './block-films.component.html',
-  styleUrls: ['./block-films.component.scss']
+  styleUrls: ['./block-films.component.scss'],
 })
-export class BlockFilmsComponent implements OnInit{
+export class BlockFilmsComponent implements OnInit {
   allFilms: any[] = [];
   url: string | undefined;
 
-
   constructor(
     private FilmsService: FilmsService,
-    private renderer: Renderer2
+    private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit(): void {
@@ -23,7 +23,18 @@ export class BlockFilmsComponent implements OnInit{
 
   loadAllFilms() {
     this.FilmsService.getFilms().subscribe((films: any[]) => {
-      this.allFilms = films;
+      for (let item of films) {
+        let safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+          item['video']
+        );
+        let film = {
+          title: item['title'],
+          publicationevent: item['publicationevent'],
+          video: safeUrl,
+          image: item['image'],
+        };
+        this.allFilms.push(film);
+      }
     });
   }
 
@@ -38,9 +49,9 @@ export class BlockFilmsComponent implements OnInit{
     back.style.position = 'absolute';
   }
 
-  onMouseOut(hoverName: HTMLElement, back: HTMLElement, front: HTMLElement){
+  onMouseOut(hoverName: HTMLElement, back: HTMLElement, front: HTMLElement) {
     hoverName.style.transform =
-    'perspective(600px) rotateY(0deg) translateX(0%)';
-  back.style.display = 'block';
+      'perspective(600px) rotateY(0deg) translateX(0%)';
+    back.style.display = 'block';
   }
 }

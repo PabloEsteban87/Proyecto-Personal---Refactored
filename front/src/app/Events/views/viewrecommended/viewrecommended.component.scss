@@ -1,13 +1,13 @@
 @media (min-width: 768px) and (max-width: 1440px) {
-    h2{
+    h2 {
         text-align: center;
         color: #527664;
         margin-bottom: 30px;
-        margin-top: 30px; 
+        margin-top: 30px;
         font-size: 1.7vw;
     }
 
-    .container-recommended{
+    .container-recommended {
         display: grid;
         grid-template-columns: 1fr;
         width: 88%;
@@ -19,70 +19,64 @@
         padding: 17px;
     }
 
-    .name-date{
+    .name-date {
         display: flex;
         align-items: center;
         width: 37%;
     }
 
-    .name{
+    .name {
         font-size: 20px;
     }
-    
-    .container-footer{
-        display: flex; 
+
+    .container-footer {
+        display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgba(82, 118, 100, 1);
         opacity: 0.8;
-        width: 100%; 
+        width: 100%;
         height: 50px;
-        margin-top: 30px; 
-        border-radius: 20px;  
+        margin-top: 30px;
+        border-radius: 20px;
         position: relative;
     }
 
-    .book p{
+    .book p {
         font-size: 20px;
         font-weight: 900;
         text-align: center;
     }
 
-    .recommended p{
+    .recommended p {
         font-size: 15px;
         text-align: justify;
     }
+}
 
-
-
-    }
-
-
-
-
-    @media (max-width: 425px) {
-    h2{
+@media (max-width: 425px) {
+    h2 {
         font-size: 4vw;
         text-align: center;
         color: #527664;
         margin-bottom: 30px;
-        margin-top: 30px; 
+        margin-top: 30px;
     }
-    
-    .container-footer{
-        display: flex; 
+
+    .container-footer {
+        display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgba(82, 118, 100, 1);
         opacity: 0.8;
-        width: 100%; 
+        width: 100%;
         height: 30px;
-        margin-top: 30px; 
+        margin-top: 30px;
         position: relative;
-            bottom: 0px;      
+        bottom: 0px;
     }
 
-    .container-recommended{
+    .container-recommended {
         display: grid;
         grid-template-columns: 1fr;
         width: 91%;
@@ -94,144 +88,139 @@
         padding: 10px;
     }
 
-    .name-date{
+    .name-date {
         display: flex;
         align-items: center;
         width: 80%;
     }
 
-    .name{
+    .name {
         font-size: 20px;
     }
 
-    .book p{
+    .book p {
         font-size: 20px;
         font-weight: 900;
         text-align: center;
     }
 
-    .recommended p{
+    .recommended p {
         font-size: 15px;
         text-align: justify;
         padding: 10px;
     }
 
-    }
-    
-    @media (min-width: 426px) and (max-width: 767px) {
-    
-        h2{
-            font-size: 3.5vw;
-            text-align: center;
-            color: #527664;
-            margin-bottom: 30px;
-            margin-top: 30px; 
-        }
-    
-        .container-footer{
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(82, 118, 100, 1);
-            opacity: 0.8;
-            width: 100%; 
-            height: 30px;
-            position: fixed;
-            bottom: 0px;    
-        }
+}
 
-        .container-recommended{
-            display: grid;
-            grid-template-columns: 1fr;
-            width: 80%;
-            grid-gap: 20px;
-            background-color: #527664;
-            color: white;
-            margin-bottom: 20px;
-            border-radius: 30px;
-            padding: 10px;
-        }
-    
-        .name-date{
-            display: flex;
-            align-items: center;
-            width: 37%;
-        }
-    
-        .name{
-            font-size: 20px;
-        }
+@media (min-width: 426px) and (max-width: 767px) {
 
-        .book p{
-            font-size: 20px;
-            font-weight: 900;
-            text-align: center;
-        }
-
-        .recommended p{
-            font-size: 15px;
-            text-align: justify;
-            padding: 10px;
-        }
-    
-    
-    
+    h2 {
+        font-size: 3.5vw;
+        text-align: center;
+        color: #527664;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
-    @media (min-width: 1441px){
-        h2{
-            text-align: center;
-            color: #527664;
-            margin-bottom: 30px;
-            margin-top: 30px; 
-            font-size: 1.7vw;
-        }
-    
-        .container-recommended{
-            display: grid;
-            grid-template-columns: 1fr;
-            width: 50%;
-            grid-gap: 20px;
-            background-color: #527664;
-            color: white;
-            margin-bottom: 20px;
-            border-radius: 30px;
-            padding: 20px;
-        }
-    
-        .name-date{
-            display: flex;
-            align-items: center;
-            width: 37%;
-        }
-    
-        .name{
-            font-size: 20px;
-        }
-        
-        .container-footer{
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(82, 118, 100, 1);
-            opacity: 0.8;
-            width: 100%; 
-            height: 50px;
-            margin-top: 30px; 
-            border-radius: 20px;  
-            position: relative;
-        }
-    
-        .book p{
-            font-size: 20px;
-            font-weight: 900;
-            text-align: center;
-        }
-    
-        .recommended p{
-            font-size: 15px;
-            text-align: justify;
-        }
-    
-    
+    .container-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(82, 118, 100, 1);
+        opacity: 0.8;
+        width: 100%;
+        height: 30px;
+        position: fixed;
+        bottom: 0px;
     }
+
+    .container-recommended {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        grid-gap: 20px;
+        background-color: #527664;
+        color: white;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .name-date {
+        display: flex;
+        align-items: center;
+        width: 37%;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .book p {
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .recommended p {
+        font-size: 15px;
+        text-align: justify;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1441px) {
+    h2 {
+        text-align: center;
+        color: #527664;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-size: 1.7vw;
+    }
+
+    .container-recommended {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 50%;
+        grid-gap: 20px;
+        background-color: #527664;
+        color: white;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        padding: 20px;
+    }
+
+    .name-date {
+        display: flex;
+        align-items: center;
+        width: 37%;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(82, 118, 100, 1);
+        opacity: 0.8;
+        width: 100%;
+        height: 50px;
+        margin-top: 30px;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .book p {
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .recommended p {
+        font-size: 15px;
+        text-align: justify;
+    }
+}

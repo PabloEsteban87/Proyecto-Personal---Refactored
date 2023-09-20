@@ -7,29 +7,27 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "videogame")
 public class Videogame {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_videogame")
     private Long id;
-    
+
     @Column(name = "title")
     private String title;
-    
+
     @Column(name = "publicationevent")
     private Date publicationevent;
-    
-    @Column(name = "description", columnDefinition="TEXT")
+
+    @Column(name = "description", columnDefinition = "TEXT")
     private String description;
-    
+
     @Column(name = "image")
     private String image;
 
     @Column(name = "genre")
     private String genre;
 
-    
- 
     public Long getId() {
         return id;
     }
@@ -70,7 +68,7 @@ public class Videogame {
         this.image = image;
     }
 
-       public String getGenre() {
+    public String getGenre() {
         return genre;
     }
 
