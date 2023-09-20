@@ -20,25 +20,18 @@ export class FormComponent {
     name: new FormControl(),
     date: new FormControl(),
     book: new FormControl(),
-    description: new FormControl()
+    recommended: new FormControl()
   });
-
-   this.loadAllRecommended();
-  }
+}
 
   back(){
     this.router.navigate(['viewhome']);
   }
 
-  loadAllRecommended(){
-    this.recommendedBooksService.getRecommendedBooks().subscribe((recommendedbooks: any[]) => {
-      this.allRecommendedBooks = recommendedbooks;
-    }); 
-  }
-
-  
   onSubmitForm(){
-       
+    this.recommendedBooksService.postRecommendedBooks(this.FormRecommended.value).subscribe((books: any[]) => {
+      console.log("añadido");
+    }); 
   } 
 
 

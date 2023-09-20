@@ -39,6 +39,8 @@ public class SecurityConfiguration {
                                                 .requestMatchers(HttpMethod.POST).permitAll()
                                                 .requestMatchers(HttpMethod.GET).permitAll()
                                                 .requestMatchers("/books/**").permitAll()
+                                                .requestMatchers("/recommended/**").permitAll()
+                                                .requestMatchers("/viewform").permitAll()
                                                 .requestMatchers("/games/**").permitAll()
                                                 .requestMatchers("/user/**").permitAll()
                                                 .requestMatchers("/register").permitAll())
@@ -54,13 +56,14 @@ public class SecurityConfiguration {
                 CorsConfiguration configuration = new CorsConfiguration();
                 configuration.setAllowCredentials(true);
                 configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200"));
-                configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
+                configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+                configuration.setAllowedHeaders(Arrays.asList("*"));
                 UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
                 source.registerCorsConfiguration("/**", configuration);
                 return source;
         }
 
-        @Bean
+    /*     @Bean
         public InMemoryUserDetailsManager userDetailsManager() {
                 UserBuilder users = User.builder();
                 UserDetails user = users
@@ -76,10 +79,10 @@ public class SecurityConfiguration {
                                 .build();
 
                 return new InMemoryUserDetailsManager(user, admin);
-        }
+        } */
 
-        @Bean
+      /*   @Bean
         PasswordEncoder passwordEncoder() {
                 return new BCryptPasswordEncoder();
-        }
+        } */
 }
