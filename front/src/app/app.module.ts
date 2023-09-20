@@ -19,6 +19,7 @@ import { ViewgamesComponent } from './Events/views/viewgames/viewgames.component
 import { ViewbiographyComponent } from './Events/views/viewbiography/viewbiography.component';
 import { ViewformComponent } from './Events/views/viewform/viewform.component';
 import { FormComponent } from './Events/components/form/form.component';
+import { ViewrecommendedComponent } from './Events/views/viewrecommended/viewrecommended.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FormComponent } from './Events/components/form/form.component';
     ViewgamesComponent,
     ViewbiographyComponent,
     ViewformComponent,
-    FormComponent
+    FormComponent,
+    ViewrecommendedComponent
   ],
   imports: [
     BrowserModule,
