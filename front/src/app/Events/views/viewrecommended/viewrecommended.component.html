@@ -1,0 +1,15 @@
+<app-header></app-header>
+<h2>Libros recomendados</h2>
+<div class="container-recommended" *ngFor="let recommended of allRecommendedBooks">
+    <div class="name-date">
+        <p class="date">{{recommended.date | date: 'dd-MM-yyyy'}}</p>
+        <p class="name">{{recommended.name}}</p>
+    </div>
+    <div class="book">
+        <p>{{recommended.book}}</p>
+    </div>
+    <div class="recommended">
+        <p>{{recommended.recommended}}</p>
+    </div>
+</div>
+<div class="container-footer"><app-footer></app-footer></div>

@@ -1,0 +1,16 @@
+<div class="block">
+    <div #hoverName *ngFor="let films of allFilms" class="films-front"
+        (mouseenter)="onMouseEnter(hoverName, back, front)">
+        <div #front class="front">
+            <img [src]='url + films.image' class="image-block" alt="portada libro">
+
+        </div>
+        <div #back class="back" (mouseleave)="onMouseOut(hoverName, back, front)">
+            <p class="title">{{films.title}}</p>
+            <p class="publication">{{films.publicationevent | date: 'dd-MM-yyyy'}}</p>
+            <p class="video">Trailer:<br><iframe width="90%" height="90%" [src]='films.video' title="Trailer películas"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe></p>
+        </div>
+    </div>
+</div>

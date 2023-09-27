@@ -1,0 +1,74 @@
+@media (min-width:290px) and (max-width: 426px) {
+    .input-1 {
+        width: 80% !important;
+    }
+
+    input {
+        margin-bottom: 7% !important;
+    }
+}
+
+@media (max-width: 2560px) {
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        background-color: antiquewhite;
+        padding: 10px;
+    }
+
+    input {
+        margin-bottom: 30px;
+        width: 350px;
+        background-color: rgba(82, 118, 100, 1);
+        border-radius: 20px;
+        color: white;
+        padding: 10px;
+    }
+
+    input::placeholder {
+        color: white;
+        text-align: center;
+    }
+    
+    .reset {
+        margin-right: 55px;
+        padding: 5px;
+        text-align: center;
+        width: 50px;
+    }
+
+    .validar {
+        padding: 5px;
+        width: 30%;
+    }
+
+    .atras {
+        width: 20%;
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .area1 {
+        text-align: justify;
+        background-color: rgba(82, 118, 100, 1);
+        border-radius: 20px;
+        color: white;
+        padding: 20px;
+        height: 20vh;
+    }
+
+    .botones {
+        display: block;
+        text-align: center;
+    }
+
+    .area {
+        color: rgba(82, 118, 100, 1);
+        font-weight: 700;
+        text-align: center;
+    }
+}

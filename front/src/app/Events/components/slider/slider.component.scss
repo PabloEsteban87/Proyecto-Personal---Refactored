@@ -1,0 +1,55 @@
+@media (max-width: 767px) {
+    .image-slider1 {
+        border-radius: 35px;
+        width: 95vw;
+        height: 141px;
+    }
+
+    .image-arrow-left {
+        position: absolute;
+        bottom: 38%;
+        left: 4%;
+    }
+
+    .image-arrow-left:hover {
+        cursor: pointer;
+    }
+
+    .image-arrow-right {
+        position: absolute;
+        bottom: 38%;
+        right: 4%;
+    }
+
+    .image-arrow-right:hover {
+        cursor: pointer;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .image-slider1 {
+        border-radius: 35px;
+        width: 65vw;
+    }
+
+    .image-arrow-left {
+        position: absolute;
+        bottom: 38%;
+        left: 4%;
+    }
+
+    .image-arrow-left:hover {
+        cursor: pointer;
+    }
+
+    .image-arrow-right {
+        position: absolute;
+        bottom: 38%;
+        right: 4%;
+    }
+
+    .image-arrow-right:hover {
+        cursor: pointer;
+    }
+}

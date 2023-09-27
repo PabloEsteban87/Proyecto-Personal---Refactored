@@ -1,0 +1,19 @@
+.footer-p {
+    color: white;
+    text-align: center;
+}
+
+.books {
+    text-decoration: none;
+}
+
+.books p {
+    color: red;
+    margin-bottom: 7px;
+}
+
+@media (max-width: 767px) {
+    .books {
+        display: none;
+    }
+}

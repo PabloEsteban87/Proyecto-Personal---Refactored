@@ -1,0 +1,242 @@
+@media (max-width: 767px) {
+    .container-logo {
+        margin-top: 13px;
+    }
+
+
+    .container-header-mobile-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-header {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .recommended-books {
+        color: #527664;
+    }
+
+    .container-title {
+        display: flex;
+        width: 95%;
+        border-radius: 35px;
+        background-color: #527664;
+        padding: 5px;
+    }
+
+    .image-title2 {
+        display: none;
+
+    }
+
+    .boton-menu {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo {
+        width: 109px;
+        height: 99px;
+    }
+
+    .container-recommendedbooks {
+        position: relative;
+
+    }
+
+    .text-book {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        transition: 1.5s ease;
+        display: none;
+    }
+
+    .text-book-1 {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: #527664;
+    }
+
+    .book {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .container-recommendedbooks:hover .text-book {
+
+        display: block;
+    }
+
+    .container-nav-2-mobile {
+        background-color: #527664;
+        display: none;
+        position: absolute;
+    }
+
+    .menu_ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    .menu_ul li {
+        padding: 16px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .menu_ul:hover li {
+        opacity: .9;
+    }
+
+    .menu_ul:hover li a {
+        color: white;
+    }
+
+    .menu_ul li:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .menu_ul li:hover a {
+        font-size: 1.3rem;
+    }
+
+
+    .menu ul li:hover {
+        color: #C48C31;
+    }
+
+    @keyframes menuanimation {
+        0% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+    }
+
+    @keyframes menuanimation2 {
+        100% {
+            opacity: 1
+        }
+
+        0% {
+            opacity: 0.1
+        }
+    }
+
+    .show-menu {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 95%;
+        z-index: 1;
+        animation: menuanimation 1s;
+        background-color: #527664;
+        margin-top: 452px;
+        margin-left: 2.5%;
+        border-radius: 30px;
+        box-shadow: -1px 10px 11px 4px rgba(107,99,107,1);
+    }
+
+    .hide-menu {
+        animation: menuanimation2 1s;
+    }
+
+    .hideDisplay {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-logo {
+        margin-top: 13px;
+    }
+
+    .container-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-header-mobile {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #527664;
+    }
+
+    .container-title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .image-title {
+        display: none;
+    }
+
+    .image-title2 {
+        width: 50vw;
+
+    }
+
+    .container-nav-1 {
+        display: none;
+    }
+
+    .logo {
+        width: 109px;
+        height: 99px;
+    }
+
+    .carrito {
+        display: none;
+    }
+
+    .menu_ul li {
+        padding: 10px;
+        list-style-type: none;
+        margin-right: 2%;
+        margin-bottom: 10px;
+        width: 28%;
+        text-align: center;
+        color: #527664;
+        font-size: 2.1vw;
+    }
+
+    .menu_ul li a:hover {
+        color: gray;
+        cursor: pointer;
+    }
+
+    .menu_ul {
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+
+    }
+}
